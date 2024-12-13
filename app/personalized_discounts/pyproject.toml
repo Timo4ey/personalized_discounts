@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=75.0", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "personalized_discounts"
+version = "0.0.1"
+description = "A service that analyzes the purchase history of all customers and determines which products to offer discounts for a specific user."
+authors = [
+    {name = "Timofey", email = "yakovishintimofey@gmail.com"}
+]
+dependencies = [
+    "fastapi[standard]==0.115.6",
+    "pydantic==2.10.3",
+    "uvicorn[standard]==0.32.1",
+    "pandas==2.2.3"
+
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
